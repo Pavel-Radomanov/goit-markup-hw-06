@@ -385,9 +385,17 @@ fill: currentColor;
     fill: rgba(33, 150, 243, 1);
     border-color: rgba(33, 150, 243, 1);
 }
-.form-input:focus~.item{
+.form-input:focus + .item{
     fill: rgba(33, 150, 243, 1);
 border-color: rgba(33, 150, 243, 1);
+}
+.form-input:focus ~ .item {
+    fill: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+}
+.form-input:focus > .test1 {
+    fill: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
 }
 .form-input-comment{
     width: 448px;
