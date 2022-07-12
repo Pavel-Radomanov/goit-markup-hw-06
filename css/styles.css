@@ -381,22 +381,25 @@ fill: currentColor;
     cursor: pointer;
     border-color: rgba(33, 150, 243, 1);
 }
-.form-input:focus-within{
+/*.form-input:focus-within > .icon-custom{
     fill: rgba(33, 150, 243, 1);
     border-color: rgba(33, 150, 243, 1);
-}
-.form-input:focus + .item{
+}*/
+
+.form-input:focus-within + .item{
     fill: rgba(33, 150, 243, 1);
-border-color: rgba(33, 150, 243, 1);
 }
-.form-input:focus ~ .item {
+.form-input:focus{
+    border-color: rgba(33, 150, 243, 1);
+}
+/*.form-input:focus ~ .item {
     fill: rgba(33, 150, 243, 1);
     border-color: rgba(33, 150, 243, 1);
 }
 .form-input:focus > .test1 {
     fill: rgba(33, 150, 243, 1);
     border-color: rgba(33, 150, 243, 1);
-}
+}*/
 .form-input-comment{
     width: 448px;
         height: 120px;
