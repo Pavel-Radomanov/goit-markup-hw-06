@@ -369,6 +369,10 @@ fill: currentColor;
     padding-top:12px;
     padding-bottom:12px;    
     padding-left: 42px;
+
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item{
     transition-property: fill;
@@ -391,16 +395,16 @@ fill: currentColor;
     fill: rgba(33, 150, 243, 1);
 }
 .form-input:focus{
+    background-color: transparent;
+    outline: none;
     border-color: rgba(33, 150, 243, 1);
 }
-/*.form-input:focus ~ .item {
-    fill: rgba(33, 150, 243, 1);
+.form-input-comment:focus{
+    background-color: transparent;
+    outline: none;
     border-color: rgba(33, 150, 243, 1);
 }
-.form-input:focus > .test1 {
-    fill: rgba(33, 150, 243, 1);
-    border-color: rgba(33, 150, 243, 1);
-}*/
+
 .form-input-comment{
     width: 448px;
         height: 120px;
@@ -410,11 +414,15 @@ fill: currentColor;
         resize: none;
         padding: 12px 16px;
         font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.01em;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input-comment::placeholder{
     font-family: 'Roboto';
